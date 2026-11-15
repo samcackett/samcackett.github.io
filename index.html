@@ -1,461 +1,453 @@
 <!DOCTYPE html>
-<!-- upto 2 directory depth-->
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sam Cackett</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    </noscript>
-    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam Cackett - Staff Software Engineer &amp; Engineering Manager</title>
+  <meta name="description" content="Sam Cackett - Staff Software Engineer & Engineering Manager in London. Building reliable user-facing systems, on-device AI features, and pragmatic engineering teams." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+          },
+          colors: {
+            slatebg: '#0f172a',
+            slatecard: '#1e293b',
+            slateborder: '#334155',
+            accent: '#38bdf8',
+          }
         }
-      </style>
-    </noscript>
-  </head>
-  <body id="top">
-    <header class="bg-light">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
-        <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Sam Cackett</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-              <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
-              <!-- <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li> -->
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#0f172a] text-slate-100 font-sans antialiased selection:bg-sky-400/20 selection:text-sky-300">
+
+<!-- Sticky Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-slate-800">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Brand / Logo -->
+      <a href="#" class="text-base sm:text-lg font-semibold tracking-tight text-white hover:text-sky-400 transition-colors">
+        Sam Cackett
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300" aria-label="Primary Navigation">
+        <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
       </nav>
-    </header>
-    <div class="page-content">
-      <div id="content">
-<header>
-  <div class="cover bg-light">
-    <div class="container px-3">
-      <div class="row">
-        <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello"/></div>
-        <div class="col-lg-6">
-          <div class="mt-5">
-            <p class="lead text-uppercase mb-1">Hello!</p>
-            <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Sam Cackett</h1>
-            <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">Senior Engineering Manager & Software Engineer</p>
-            <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
-          </div>
-        </div>
-      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+              id="mobile-menu-btn"
+              type="button"
+              class="md:hidden inline-flex items-center justify-center p-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-sky-400 transition-colors"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation menu"
+      >
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" class="hidden w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
   </div>
-  <div class="wave-bg"></div>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-[#0f172a]">
+    <div class="px-4 pt-2 pb-4 space-y-1">
+      <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-sky-400 hover:bg-slate-800/60 transition-colors">About</a>
+      <a href="#experience" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-sky-400 hover:bg-slate-800/60 transition-colors">Experience</a>
+      <a href="#skills" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-sky-400 hover:bg-slate-800/60 transition-colors">Skills</a>
+      <a href="#contact" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-sky-400 hover:bg-slate-800/60 transition-colors">Contact</a>
+    </div>
+  </div>
 </header>
-<div class="section pt-4 px-3 px-lg-4" id="about">
-  <div class="container-narrow">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="h4 my-2">Hello! I’m Sam Cackett.</h2>
-        <p>I am a passionate and caring Senior Engineering Manager with a track record of building high performance teams that deliver. Focused on the collective of a team whilst attending to individual needs and helping people thrive.</p>
-        <div class="row mt-3">
-          <div class="col-sm-2">
-            <div class="pb-1">Age:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">34</div>
-          </div>
-          <div class="col-sm-2">
-            <div class="pb-1">Email:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">samcackett@gmail.com</div>
-          </div>
-          <div class="col-sm-2">
-            <div class="pb-1">Address:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">London, UK</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/avatar.jpg" width="400" height="400" alt="Sam Cackett"/></div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="services">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">My Services</h2>
-    </div>
-    <div class="text-center">
-      <p class="mx-auto mb-3" style="max-width:600px">My experience is varied as I enjoy learning new technologies and understand them rapidly. I have worked in a variety of industries, with a variety of businesses, in multiple programming languages. I have experience designing and developing software across the entire lifecycle.</p>
-    </div>
-    <div class="row py-3">
-      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100"><img class="mb-2" src="images/services/web-design.svg" width="96" height="96" alt="web design"/>
-        <div class="h5">Engineering Management</div>
-      </div>
-      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2" src="images/services/graphic-design.svg" width="96" height="96" alt="graphic design"/>
-        <div class="h5">Web Development</div>
-      </div>
-      <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400"><img class="mb-2" src="images/services/app-development.svg" width="96" height="96" alt="app development"/>
-        <div class="h5">App Development</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="skills">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">My Skills</h2>
-    </div>
-    <div class="bg-light p-3">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">React</span><span>80%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">TypeScript</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">Terraform</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">AWS</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 offset-md-2">
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">Managing Teams</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">Growing Individuals</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">Java / Kotlin</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="py-1">
-            <div class="d-flex text-small fw-bolder"><span class="me-auto">MySQL</span><span>90%</span></div>
-            <div class="progress my-1">
-              <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- <div class="section px-2 px-lg-4 pt-5" id="portfolio">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Portfolio </h2>
-    </div>
-    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
-      <div class="grid-sizer"></div>
-      <div class="grid-item"><a href="https://dribbble.com">
-          <figure class="portfolio-item"><img src="images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Web Design</h4>
-              <div>Dribbble.com</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://github.com">
-          <figure class="portfolio-item"><img src="images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg" data-caption="Example of an optional caption."/>
-            <figcaption> 
-              <h4 class="h5 mb-0">Web Development</h4>
-              <div>GitHub.com</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://soundcloud.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/3-small.png" data-bp="images/portfolio/3.jpg" data-caption="Example of an optional caption."/>
-            <figcaption> 
-              <h4 class="h5 mb-0">Audio Mixing</h4>
-              <div>Soundcloud.com</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.adobe.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/4-small.png" data-bp="images/portfolio/4.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Video Editing</h4>
-              <div>Adobe After Effects</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.adobe.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/5-small.png" data-bp="images/portfolio/5.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Photography</h4>
-              <div>Adobe Photoshop</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://www.android.com/">
-          <figure class="portfolio-item"><img src="images/portfolio/6-small.png" data-bp="images/portfolio/6.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Development</h4>
-              <div>Android</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://flutter.dev/">
-          <figure class="portfolio-item"><img src="images/portfolio/7-small.png" data-bp="images/portfolio/7.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Design</h4>
-              <div>Flutter</div>
-            </figcaption>
-          </figure></a></div>
-      <div class="grid-item"><a href="https://flutter.dev/">
-          <figure class="portfolio-item"><img src="images/portfolio/8-small.png" data-bp="images/portfolio/8.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">App Development</h4>
-              <div>Flutter</div>
-            </figcaption>
-          </figure></a></div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="experience">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Experience</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">UI/UX Design</h3>
-                <div class="text-muted text-small">Designerr Inc. <small>(2012-2014)</small></div>
-              </div><img src="images/services/ui-ux.svg" width="48" height="48" alt="ui-ux"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">App Development</h3>
-                <div class="text-muted text-small">MakeMyApp LLC. <small>(2015-2018)</small></div>
-              </div><img src="images/services/app-development.svg" width="48" height="48" alt="app development"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">Web Design</h3>
-                <div class="text-muted text-small">Webbie LLC. <small>(2018-2020)</small></div>
-              </div><img src="images/services/web-design.svg" width="48" height="48" alt="web design"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">Full Stack Development</h3>
-                <div class="text-muted text-small">Coder Inc. <small>(2020-2021)</small></div>
-              </div><img src="images/services/full-stack.svg" width="48" height="48" alt="full stack"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="testimonials">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Client Testimonials</h2>
-    </div>
-    <div class="row"> 
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Aiyana</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client1.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Alexander</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client2.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Ariya</div>
-            <div class="text-small">Web Developer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client3.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="400">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Braiden</div>
-            <div class="text-small">Web Designer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-<div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">My CV</h2>
-    </div>
-    <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-      <div class="mt-3 px-1">
-        <div class="h5">Download my CV <a href="cv/Sam_Cackett_-_Senior_Engineering_Manager.pdf">here</a></div>
-      </div>
-    </div>
-  </div>
-</div>
 
+<main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<!-- <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Contact Me</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="bg-light my-2 p-3 pt-2"><form action="https://formspree.io/your@email.com"
-    method="POST">
-    <div class="form-group my-2">
-      <label for="name" class="form-label fw-bolder">Name</label>
-      <input class="form-control" type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group my-2">
-      <label for="email" class="form-label fw-bolder">Email</label>
-      <input class="form-control" type="email" id="email" name="_replyto" required>
-    </div>
-  <div class="form-group my-2">
-    <label for="message" class="form-label fw-bolder">Message</label>
-    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
-  </div>
-  <button class="btn btn-primary mt-2" type="submit">Send</button>
-</form>
+  <!-- Hero Section -->
+  <section class="py-16 sm:py-24 border-b border-slate-800/80">
+    <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-10">
+      <!-- Intro Content -->
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs font-mono text-sky-400 mb-6">
+          <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+          London, United Kingdom
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white">
+          Sam Cackett
+        </h1>
+        <p class="mt-3 text-xl sm:text-2xl font-medium text-sky-400">
+          Staff Software Engineer &amp; Engineering Manager
+        </p>
+        <p class="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed">
+          Building high quality user-facing systems, on-device AI features, and high performing engineering teams in London.
+        </p>
+
+        <!-- Primary & Secondary CTAs -->
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a
+                  href="#contact"
+                  class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-sky-400 text-slate-950 font-semibold text-sm hover:bg-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-[#0f172a] transition-colors"
+          >
+            Get in Touch
+          </a>
+          <a
+                  href="cv/Sam_Cackett_-_Staff_Engineer__Engineering_Manager.pdf"
+                  download="Sam_Cackett_CV.pdf"
+                  class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-[#1e293b] text-slate-100 border border-slate-700 font-medium text-sm hover:border-sky-400/60 hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-[#0f172a] transition-colors"
+          >
+            <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download CV
+          </a>
         </div>
       </div>
-      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-        <div class="mt-3 px-1">
-          <div class="h5">Let’s talk how I can help you!</div>
-          <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
-          <p>Or get in touch using my email, skype or my contact number.</p>
-          <p>See you!</p>
+
+      <!-- Profile Picture -->
+      <div class="shrink-0">
+        <div class="w-36 h-36 sm:w-44 sm:h-44 lg:w-52 lg:h-52 rounded-2xl overflow-hidden border-2 border-slate-700/80 bg-[#1e293b] shadow-xl">
+          <img
+                  src="images/avatar.jpg"
+                  alt="Sam Cackett"
+                  class="w-full h-full object-cover"
+          />
         </div>
-        <div class="mt-53 px-1">
-          <div class="row"> 
-            <div class="col-sm-2">
-              <div class="pb-1">Email:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">walter@company.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Skype:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">username@skype.com</div>
-            </div>
-            <div class="col-sm-2">
-              <div class="pb-1">Phone:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">+0718-111-0011</div>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 sm:py-20 border-b border-slate-800/80 scroll-mt-16">
+    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-8">About</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Bio Column -->
+      <div class="lg:col-span-7 space-y-4 text-slate-300 text-base leading-relaxed">
+        <p>
+          I am a hands-on Staff Software Engineer and Engineering Manager with over 14 years of experience delivering software across mobile platforms, operating systems, and cloud backends.
+        </p>
+        <p>
+          At Google, I work on the Android Context Engine team building Pixel Magic Cue and Proactive Assistance - using AI models to anticipate user intent and surface real-time, low-latency help across apps. Previously at Google, I managed the Android Overview (Launcher app switcher) and Physical Keyboard/Trackpad teams, and worked as a C++ Tech Lead on ChromeOS System UI.
+        </p>
+        <p>
+          Before Google, I spent four years at Moonpig leading platform migrations to AWS serverless and rebuilding their mobile engineering division, following seven years delivering client systems at IBM iX.
+        </p>
+        <p>
+          I enjoy any technical challenge but I particularly enjoy building highly functional and engaging front end user experiences.
+        </p>
+      </div>
+
+      <!-- Quick Facts Card -->
+      <div class="lg:col-span-5 bg-[#1e293b] border border-slate-700/80 rounded-xl p-6">
+        <h3 class="text-sm font-mono uppercase tracking-wider text-sky-400 mb-4">Quick Facts</h3>
+        <dl class="space-y-4 text-sm">
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-1 pb-3 border-b border-slate-700/60">
+            <dt class="text-slate-400 font-medium">Location</dt>
+            <dd class="text-slate-100 font-medium sm:text-right">London, UK</dd>
           </div>
-        </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-1 pb-3 border-b border-slate-700/60">
+            <dt class="text-slate-400 font-medium">Current Role</dt>
+            <dd class="text-slate-100 font-medium sm:text-right">Staff Software Engineer, Google</dd>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-1 pb-3 border-b border-slate-700/60">
+            <dt class="text-slate-400 font-medium">Focus</dt>
+            <dd class="text-slate-100 font-medium sm:text-right">Systems, On-Device AI, Android/OS UI</dd>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+            <dt class="text-slate-400 font-medium">Interests</dt>
+            <dd class="text-slate-100 font-medium sm:text-right">Private Pilot, Piano, Logic Puzzles, Cooking</dd>
+          </div>
+        </dl>
       </div>
     </div>
-  </div>
-</div> -->
-<footer class="pt-4 pb-4 text-center bg-light" id="contact">
-  <div class="container">
-    <div class="my-3">
-      <div class="h4">Sam Cackett</div>
-      <p>Web Developer & Mobile Application Developer</p>
-      <a href="mailto:samcackett@gmail.com?subject=Contact from Github site">Email Me</a>  
-    <div class="text-small text-secondary">
-      <div class="mb-1">&copy; Super Folio. All rights reserved.</div>
+  </section>
+
+  <!-- Experience Timeline Section -->
+  <section id="experience" class="py-16 sm:py-20 border-b border-slate-800/80 scroll-mt-16">
+    <div class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Experience</h2>
+      <p class="mt-2 text-slate-400 text-base">Career progression across OS engineering, cloud architecture, and technical leadership.</p>
+    </div>
+
+    <div class="relative border-l border-slate-700 ml-3 sm:ml-4 space-y-10">
+
+      <!-- Role 1 -->
+      <div class="relative pl-7 sm:pl-9">
+        <span class="absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full bg-sky-400 ring-4 ring-[#0f172a]"></span>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+          <h3 class="text-lg font-semibold text-white">Staff Software Engineer, Google (Android Context Engine)</h3>
+          <span class="text-xs font-mono text-sky-400 shrink-0">London | Oct 2025 - Present</span>
+        </div>
+        <p class="mt-2.5 text-sm sm:text-base text-slate-300 leading-relaxed">
+          Working hands-on building Pixel Magic Cue and Proactive Assistance features using AI models to anticipate user intent and surface real-time help across Android - such as suggesting restaurant searches via Gemini during group chats, or offering one-tap autofill suggestions pulled from Calendar and Gmail.
+        </p>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="relative pl-7 sm:pl-9">
+        <span class="absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-600 ring-4 ring-[#0f172a]"></span>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+          <h3 class="text-lg font-semibold text-white">Engineering Manager, Google (Android System UI - Overview)</h3>
+          <span class="text-xs font-mono text-slate-400 shrink-0">London | Oct 2023 - Oct 2025</span>
+        </div>
+        <p class="mt-2.5 text-sm sm:text-base text-slate-300 leading-relaxed">
+          Managed the Overview (Android Launcher app switcher) and Physical Keyboard/Trackpad teams. Spearheaded the adoption of Jetpack Compose and Google&#39;s Recommended Architecture into Launcher, shipped Desktop Experiences and Material Design 2025, and introduced Kanban and pair programming across the group.
+        </p>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="relative pl-7 sm:pl-9">
+        <span class="absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-600 ring-4 ring-[#0f172a]"></span>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+          <h3 class="text-lg font-semibold text-white">Tech Lead / Staff Software Engineer, Google (ChromeOS)</h3>
+          <span class="text-xs font-mono text-slate-400 shrink-0">London | Jun 2022 - Oct 2023</span>
+        </div>
+        <p class="mt-2.5 text-sm sm:text-base text-slate-300 leading-relaxed">
+          Initially joined to establish and staff a 10-engineer London ChromeOS System UI team. Following company-wide restructuring, transitioned into a hands-on Tech Lead and IC role on the SNACK team, learning C++ and taking ownership of revamping the ChromeOS taskbar calendar widget and system notifications.
+        </p>
+      </div>
+
+      <!-- Role 4 -->
+      <div class="relative pl-7 sm:pl-9">
+        <span class="absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-600 ring-4 ring-[#0f172a]"></span>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+          <h3 class="text-lg font-semibold text-white">Senior Engineering Manager &amp; Engineering Manager (Platform / Android), Moonpig.com</h3>
+          <span class="text-xs font-mono text-slate-400 shrink-0">London | Feb 2018 - Jun 2022</span>
+        </div>
+        <p class="mt-2.5 text-sm sm:text-base text-slate-300 leading-relaxed">
+          Rebuilt both Android and iOS engineering teams - lifting the app rating from 2.7 to 4.8 stars and growing mobile&#39;s share of company revenue from 10% to 40%. Led the Kotlin/MVI architecture modernisation, migrated legacy .NET and SQL Server monoliths to AWS serverless and Commercetools, built GraphQL Federation with Apollo Studio, and launched the Moonpig Plus subscription scheme.
+        </p>
+      </div>
+
+      <!-- Role 5 -->
+      <div class="relative pl-7 sm:pl-9">
+        <span class="absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-600 ring-4 ring-[#0f172a]"></span>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+          <h3 class="text-lg font-semibold text-white">Senior IT Consultant / Tech Lead, IBM iX</h3>
+          <span class="text-xs font-mono text-slate-400 shrink-0">Various | Nov 2011 - Feb 2018</span>
+        </div>
+        <p class="mt-2.5 text-sm sm:text-base text-slate-300 leading-relaxed">
+          Delivered multi-million-dollar software projects across BP, Castrol, Waitrose, RBS, CLS, Barclays, National Grid, and DWP. Selected for Top Talent (top 10% of performers) and helped build out offshore mobile engineering teams in Romania.
+        </p>
+      </div>
+
+      <!-- Role 6 -->
+      <div class="relative pl-7 sm:pl-9">
+        <span class="absolute -left-[7px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-600 ring-4 ring-[#0f172a]"></span>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+          <h3 class="text-lg font-semibold text-white">Mental Health Nursing Assistant, NHS</h3>
+          <span class="text-xs font-mono text-slate-400 shrink-0">London | Sep 2009 - Nov 2011</span>
+        </div>
+        <p class="mt-2.5 text-sm sm:text-base text-slate-300 leading-relaxed">
+          Cared for patients with bipolar disorder, depression, and schizophrenia - developing empathy, calm decision-making under pressure, and people-first leadership.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Education Note -->
+    <div class="mt-10 bg-[#1e293b]/70 border border-slate-700/80 rounded-xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
       <div>
-        <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
+        <span class="text-xs font-mono uppercase tracking-wider text-sky-400">Education</span>
+        <h4 class="text-base font-semibold text-white mt-1">BSc Psychology (2:1) - University of Kent at Canterbury</h4>
+        <p class="text-sm text-slate-300 mt-1">Men&#39;s rowing captain, Henley quarter-finalist, and Boston Marathon winner.</p>
+      </div>
+      <span class="text-xs font-mono text-slate-400 shrink-0">Sep 2006 - Jul 2009</span>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="py-16 sm:py-20 border-b border-slate-800/80 scroll-mt-16">
+    <div class="mb-10">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Technical Skills</h2>
+      <p class="mt-2 text-slate-400 text-base">Core languages, platform technologies, and engineering practices.</p>
+    </div>
+
+    <div class="space-y-8">
+      <!-- Group 1 -->
+      <div>
+        <h3 class="text-xs font-mono uppercase tracking-wider text-sky-400 mb-3">Languages &amp; Frameworks</h3>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">C++</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Kotlin</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Jetpack Compose</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">TypeScript</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Java</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">.NET</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">GraphQL</span>
+        </div>
+      </div>
+
+      <!-- Group 2 -->
+      <div>
+        <h3 class="text-xs font-mono uppercase tracking-wider text-sky-400 mb-3">Systems &amp; Infrastructure</h3>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Android System UI</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">On-Device AI / Context Systems</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">AWS Serverless</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Terraform</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Elasticsearch</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Commercetools</span>
+        </div>
+      </div>
+
+      <!-- Group 3 -->
+      <div>
+        <h3 class="text-xs font-mono uppercase tracking-wider text-sky-400 mb-3">Practices &amp; Leadership</h3>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">System Architecture</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Lean / XP</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Pair Programming</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Kanban</span>
+          <span class="px-3.5 py-1.5 rounded-lg bg-[#1e293b] border border-slate-700 text-sm font-mono text-slate-200">Technical Hiring &amp; Mentoring</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 sm:py-20 scroll-mt-16">
+    <div class="bg-[#1e293b] border border-slate-700/80 rounded-2xl p-6 sm:p-10">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Contact</h2>
+        <p class="mt-3 text-slate-300 text-base leading-relaxed">
+          Interested in discussing systems engineering, Android platform work, or engineering roles in London? Feel free to reach out directly.
+        </p>
+
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Email Box with Copy Action -->
+          <div class="bg-[#0f172a] border border-slate-700/80 rounded-xl p-4 flex items-center justify-between gap-3">
+            <div class="min-w-0">
+              <div class="text-xs font-mono text-slate-400">Email</div>
+              <a href="mailto:samcackett@gmail.com" class="text-sm sm:text-base font-medium text-sky-400 hover:text-sky-300 truncate block mt-0.5 transition-colors">
+                samcackett@gmail.com
+              </a>
+            </div>
+            <button
+                    id="copy-email-btn"
+                    type="button"
+                    class="shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#1e293b] border border-slate-700 text-xs font-medium text-slate-200 hover:border-sky-400/60 hover:text-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-400 transition-colors"
+                    aria-label="Copy email address"
+            >
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <!-- Location Box -->
+          <div class="bg-[#0f172a] border border-slate-700/80 rounded-xl p-4 flex items-center justify-between">
+            <div>
+              <div class="text-xs font-mono text-slate-400">Location</div>
+              <div class="text-sm sm:text-base font-medium text-slate-100 mt-0.5">London, UK</div>
+            </div>
+            <svg class="w-5 h-5 text-sky-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Minimal Footer -->
+<footer class="border-t border-slate-800/80 py-8">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+    <p>&copy; 2026 Sam Cackett</p>
+    <div class="flex items-center gap-6">
+      <a href="mailto:samcackett@gmail.com" class="hover:text-sky-400 transition-colors">samcackett@gmail.com</a>
+      <a href="cv/Sam_Cackett_-_Staff_Engineer__Engineering_Manager.pdf" download="Sam_Cackett_CV.pdf" class="hover:text-sky-400 transition-colors">CV (PDF)</a>
     </div>
   </div>
-</footer></div>
-    </div>
-    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
-    <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
-    <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
-    <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
-    <script src="./scripts/main.js?ver=1.2.0"></script>
-  </body>
+</footer>
+
+<!-- Toast Notification for Copy Feedback -->
+<div
+        id="copy-toast"
+        role="status"
+        aria-live="polite"
+        class="fixed bottom-5 right-5 z-50 pointer-events-none opacity-0 translate-y-2 transition-all duration-200 bg-slate-800 border border-sky-400/50 text-slate-100 text-sm font-medium px-4 py-2.5 rounded-lg shadow-lg flex items-center gap-2"
+>
+  <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+  </svg>
+  <span>Email copied to clipboard</span>
+</div>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  function toggleMenu() {
+    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+    mobileMenuBtn.setAttribute('aria-expanded', String(!isExpanded));
+    mobileMenu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  }
+
+  mobileMenuBtn.addEventListener('click', toggleMenu);
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (!mobileMenu.classList.contains('hidden')) {
+        toggleMenu();
+      }
+    });
+  });
+
+  // Copy email to clipboard with toast feedback
+  const copyEmailBtn = document.getElementById('copy-email-btn');
+  const copyToast = document.getElementById('copy-toast');
+  let toastTimeout;
+
+  copyEmailBtn.addEventListener('click', () => {
+    const email = 'samcackett@gmail.com';
+    const tempInput = document.createElement('input');
+    tempInput.value = email;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    try {
+      document.execCommand('copy');
+      showToast();
+    } catch (err) {
+      console.error('Failed to copy email:', err);
+    }
+    document.body.removeChild(tempInput);
+  });
+
+  function showToast() {
+    clearTimeout(toastTimeout);
+    copyToast.classList.remove('opacity-0', 'translate-y-2');
+    copyToast.classList.add('opacity-100', 'translate-y-0');
+    toastTimeout = setTimeout(() => {
+      copyToast.classList.remove('opacity-100', 'translate-y-0');
+      copyToast.classList.add('opacity-0', 'translate-y-2');
+    }, 2500);
+  }
+</script>
+</body>
 </html>
